@@ -1,6 +1,6 @@
-# express-authorization
+# expressjs-authorization
 
-Express Authorization Package is a Authorization system that it is based in permissions, you can group them by roles.
+Expressjs Authorization Package is a Authorization system that it is based in permissions, you can group them by roles.
 
 These permissions are separate by modules, this way you can take control about that modules you give permissions (ex. user, authorization, blog, pages, etc) to the users.
 
