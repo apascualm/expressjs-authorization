@@ -1,0 +1,26 @@
+{
+  "name": "expressjs-authorization",
+  "version": "1.0.0-beta.0",
+  "description": "Authorization middleware based in permissions by modules, with possibility of group in roles",
+  "main": "./src/authorization.js",
+  "scripts": {
+  },
+  "keywords": [
+    "express", "mongodb", "mongoose", "plugin", "middleware", "authorization", "permissions", "roles"
+  ],
+  "author": "Alejandro Pascual Montenegro <pascualmontenegro@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://git@github.com:apascualm/expressjs-authorization.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apascualm/expressjs-authorization/issues"
+  },
+  "license": "Apache 2.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "5.8.x",
+    "mongoose-autopopulate": "^0.11.0",
+    "mongoose-unique-array": "git://git@github.com:apascualm/mongoose-unique-array.git#autopopulate-duplicate"
+  }
+}
