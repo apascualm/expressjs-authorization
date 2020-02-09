@@ -28,6 +28,11 @@ app.use(Authorize.Routes)
 
 These are the routes available for authorization proposes and **they are protected with authentication module permissions**.
 
+* [Roles routes](#roles-routes)
+* [Permissions routes](#permissions-routes)
+* [User authorization routes](#user-authorization-routes)
+* [Configuration routes](#initial-configuration-routes)
+
 #### Roles routes.
 Get all roles  
 Method: **GET**, Route: **/authorizations/roles**
@@ -183,6 +188,9 @@ Not parameters required:
 
 Return:
 * Return {boolean}.
+
+## Example of implementation.
+You can watch an example of how you can implement this package in the "example" folder.
 
 ## License
 
