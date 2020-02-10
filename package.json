@@ -1,12 +1,18 @@
 {
   "name": "expressjs-authorization",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Authorization middleware based in permissions by modules, with possibility of group in roles.",
   "main": "./src/authorization.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
-    "express", "mongodb", "mongoose", "plugin", "middleware", "authorization", "permissions", "roles"
+    "express",
+    "mongodb",
+    "mongoose",
+    "plugin",
+    "middleware",
+    "authorization",
+    "permissions",
+    "roles"
   ],
   "author": "Alejandro Pascual Montenegro <pascualmontenegro@gmail.com>",
   "repository": {
