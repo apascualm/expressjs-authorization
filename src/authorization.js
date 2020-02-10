@@ -64,6 +64,10 @@ Authorize.prototype.assignPermissionToRole = function assignPermissionToRole(rol
   return RoleService.assignPermission(roleId, permissionId);
 };
 
+Authorize.prototype.removePermissionToRole = function removePermissionToRole(roleId, permissionId) {
+  return RoleService.removePermission(roleId, permissionId);
+};
+
 Authorize.prototype.assignPermissionToUser = function assignPermissionToUser(permissionId, userId) {
   return UserAuthorizationService.assignPermission(userId, permissionId);
 };
@@ -79,6 +83,11 @@ Authorize.prototype.assignRoleToUser = function assignRoleToUser(roleId, userId)
 Authorize.prototype.removeRoleToUser = function removeRoleToUser(roleId, userId) {
   return UserAuthorizationService.removeRole(userId, roleId);
 };
+
+Authorize.prototype.getUserAuthorizations = function getUserAuthorizations(userId) {
+  return UserAuthorizationService.getByUserId(userId);
+};
+
 AuthorizeModule = new Authorize();
 
 module.exports = AuthorizeModule;
