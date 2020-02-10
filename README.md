@@ -112,8 +112,17 @@ Methods:
 * [hasAllPermission](#method-hasallpermission)
 * [hasAnyRole](#method-hasanyrole)
 * [hasAllRole](#method-hasallrole)
+* [createPermission](#method-createpermission)
+* [createRole](#method-createrole)
+* [assignPermissionToRole](#method-assignpermissiontorole)
+* [removePermissionToRole](#method-removepermissiontorole)
+* [assignPermissionToUser](#method-assignpermissiontouser)
+* [removePermissionToUser](#method-removepermissiontouser)
+* [assignRoleToUser](#method-assignroletouser)
+* [removeRoleToUser](#method-removeroletouser)
+* [getUserAuthorizations](#method-getuserauthorizations)
 
-### hasAnyPermission()
+### hasAnyPermission
 
 Check that the user have any of the permissions passed.
 
@@ -124,7 +133,7 @@ Parameters:
 Return:
 * Return a [authorization middleware](#authorization-middleware-class) class.
 
-### Method hasAllPermission()
+### Method hasAllPermission
 
 Check that the user have all the permissions passed.
 
@@ -135,7 +144,7 @@ Parameters:
 Return:
 * Return a [authorization middleware](#authorization-middleware-class) class.
 
-### Method hasAnyRole()
+### Method hasAnyRole
 
 Check that the user have any of the roles passed.
 
@@ -146,7 +155,7 @@ Parameters:
 Return:
 * Return a [authorization middleware](#authorization-middleware-class) class.
 
-### Method hasAllRole()
+### Method hasAllRole
 Check that the user have all the roles passed.
 
 Parameters:
@@ -155,6 +164,94 @@ Parameters:
 
 Return:
 * Return a [authorization middleware](#authorization-middleware-class) class.
+
+### Method createPermission
+Create a permission.
+
+Parameters:
+* **name** {string} name of the permission.
+* **module** {string} name of the module that contain the permissions.
+
+Return:
+* Return the permission created.
+
+### Method createRole
+Create a role.
+
+Parameters:
+* **name** {string} name of the role.
+
+Return:
+* Return the role created.
+
+### Method assignPermissionToRole
+Assign a Permission to a role.
+
+Parameters:
+* **roleId** {string} id of the role.
+* **permissionId** {string} id of the permission.
+
+Return:
+* Return the role with the new permission assigned.
+
+### Method removePermissionToRole
+Revoke a Permission to a role.
+
+Parameters:
+* **roleId** {string} id of the role.
+* **permissionId** {string} id of the permission.
+
+Return:
+* Return the role with the permission revoked.
+
+### Method assignPermissionToUser
+Assign a Permission to a user.
+
+Parameters:
+* **userId** {string} id of the user.
+* **permissionId** {string} id of the permission.
+
+Return:
+* Return the user with the new permission assigned.
+
+### Method removePermissionToUser
+Revoke a Permission to a user.
+
+Parameters:
+* **userId** {string} id of the user.
+* **permissionId** {string} id of the permission.
+
+Return:
+* Return the user with the permission revoked.
+
+### Method assignRoleToUser
+Assign a role to a user.
+
+Parameters:
+* **userId** {string} id of the user.
+* **roleId** {string} id of the role.
+
+Return:
+* Return the user with the new role assigned.
+
+### Method removeRoleToUser
+Revoke a role to a user.
+
+Parameters:
+* **userId** {string} id of the user.
+* **roleId** {string} id of the role.
+
+Return:
+* Return the user with the role revoked.
+
+### Method getUserAuthorizations
+Get roles and permissions of a user.
+
+Parameters:
+* **userId** {string} id of the user.
+
+Return:
+* Return the user with the roles and permissions assigned.
 
 ## Authorization Middleware Class
 
